@@ -1,8 +1,31 @@
 <h1 align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=100000&color=00CFFF&center=true&vCenter=true&width=800&lines=♟+Chess+Master+♟" alt="Typing Animation" />
 </h1>
+<p align="center">
+  <b>Play Chess Locally, Globally, or Against AI</b><br>
+  <a href="https://chess-master-two.vercel.app/">Live Demo</a> |
+  <a href="https://chess-master-hk3o.onrender.com">Backend API</a>
+</p>
 
-Chess Master is a full-stack web application that empowers users to play chess in multiple engaging modes, including local multiplayer, global multiplayer, and against the renowned Stockfish AI.
+## ✨ Overview
+
+**Chess Master** is a full-stack chess platform where you can play chess in various modes: locally with friends, globally with real-time opponents, or test your skills against the Stockfish AI engine. Solve puzzles, customize your board, and sharpen your game—all in a modern and responsive UI.
+
+
+## 🚀 Quick Links
+
+- 🖥️ <b>Live Demo:</b> [chess-master-two.vercel.app](https://chess-master-two.vercel.app/)
+- 🛠️ <b>Backend API:</b> [chess-master-hk3o.onrender.com](https://chess-master-hk3o.onrender.com)
+
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **Real-time:** Socket.io
+- **Chess Engine:** Stockfish
+- **Authentication:** JWT
 
 ## 🚀 Features
 
@@ -14,63 +37,47 @@ Chess Master is a full-stack web application that empowers users to play chess i
 - **User Authentication:** Secure sign-up, login, and profile management.
 - **Customizable Boards & Pieces:** Choose from multiple styles to personalize your experience.
 
-## 🛠️ Tech Stack
 
-- **Frontend:** React (Vite)
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Real-time Communication:** Socket.io
-- **Chess Engine:** Stockfish
+## 📦 Project Structure
 
-## 🧑‍💻 Getting Started
-
-### Installation
-
-Chess Master is structured with separate `backend` and `frontend` folders. Please follow the steps below to install and run the project locally:
-
-#### 1. Clone the repository
-
-```bash
-git clone https://github.com/Lokesh-reddy18/Chess-Master.git
-cd Chess-Master
+```
+Chess-Master/
+├── backend/   # Node.js, Express, MongoDB REST API & Socket.io
+└── frontend/  # React, Vite, Tailwind CSS client app
 ```
 
-#### 2. Install and run the backend
+---
 
-```bash
-cd backend
-npm install
-npm start
-```
+## 🚀 Getting Started
 
-The backend server will typically run on [http://localhost:5000](http://localhost:5000) (or as configured).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Lokesh-reddy18/Chess-Master.git
+   cd Chess-Master
+   ```
 
-#### 3. Install and run the frontend
+2. **Setup Backend**
+   ```bash
+   cd backend
+   npm install
+   npm start
+   ```
+   The backend server runs on [http://localhost:5000](http://localhost:5000) by default.
 
-Open a new terminal window/tab:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-The frontend development server will typically run on [http://localhost:3000](http://localhost:3000).
-
-## 🌎 Live Demo
-
-<p align="center">
-  <a href="https://chess-master-two.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/PLAY%20NOW-♟%20Chess%20Master%20♟-%2300CFFF?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo - Chess Master"/>
-  </a>
-</p>
+3. **Setup Frontend**
+   Open a new terminal window/tab:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+   The frontend dev server runs on [http://localhost:3000](http://localhost:3000) by default.
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <p align="center"><i>Chess Master — Play, learn, and connect through chess!</i></p>
-
 <p align="center"><b>Made by Kolli Lokesh Reddy</b></p>
