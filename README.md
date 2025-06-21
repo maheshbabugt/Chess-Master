@@ -1,122 +1,76 @@
-# ♟️ Chess Master
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=100000&color=00CFFF&center=true&vCenter=true&width=800&lines=♟+Chess+Master+♟" alt="Typing Animation" />
+</h1>
 
-Chess Master is a full-stack web application that allows users to play chess in various modes, including local multiplayer, global multiplayer, and against Stockfish AI. The platform also features user authentication, player profiles, and chess puzzles to enhance your skills.
+Chess Master is a full-stack web application that empowers users to play chess in multiple engaging modes, including local multiplayer, global multiplayer, and against the renowned Stockfish AI.
 
----
+## 🚀 Features
 
-## 🚀 Live Demo
+- **Local Multiplayer:** Play with friends on the same device.
+- **Global Multiplayer:** Connect and compete with players worldwide in real-time.
+- **Versus Stockfish AI:** Challenge yourself against one of the strongest chess engines.
+- **Puzzles:** Solve chess puzzles to sharpen your skills and tactics.
+- **Move Validation:** Ensures all moves are legal; no cheating possible!
+- **User Authentication:** Secure sign-up, login, and profile management.
+- **Customizable Boards & Pieces:** Choose from multiple styles to personalize your experience.
 
-- **Frontend:** [chess-master-two.vercel.app](https://chess-master-two.vercel.app/)
-- **Backend:** [chess-master-hk3o.onrender.com](https://chess-master-hk3o.onrender.com/)
+## 🛠️ Tech Stack
 
----
+- **Frontend:** React (Vite)
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Real-time Communication:** Socket.io
+- **Chess Engine:** Stockfish
 
-## 🧩 Features
+## 🧑‍💻 Getting Started
 
-- **Multiple Game Modes:**
-  - Play against Stockfish AI
-  - Local multiplayer
-  - Global multiplayer (real-time)
-  - Random matchmaking
-  - Chess puzzles
-- **User Authentication:** Secure registration, login, and logout
-- **Player Profiles:** Track your stats, match history, and progress
-- **Real-time Gameplay:** Powered by Socket.IO for smooth multiplayer
-- **Modern UI:** Built with React and Tailwind CSS
-- **Responsive Design:** Works great on desktop and mobile
+### Installation
 
----
+Chess Master is structured with separate `backend` and `frontend` folders. Please follow the steps below to install and run the project locally:
 
-## 🗂️ Project Structure
+#### 1. Clone the repository
 
+```bash
+git clone https://github.com/Lokesh-reddy18/Chess-Master.git
+cd Chess-Master
 ```
-backend/    # Node.js/Express backend (API, authentication, database, WebSockets)
-frontend/   # React frontend (UI, game logic, assets)
-```
 
----
+#### 2. Install and run the backend
 
-## ⚙️ Getting Started
-
-### Prerequisites
-- Node.js (v16 or higher recommended)
-- npm or yarn
-
-### Backend Setup
-```sh
+```bash
 cd backend
 npm install
-# Configure your .env file (MONGO_URI, JWT_SECRET, etc.)
 npm start
 ```
 
-### Frontend Setup
-```sh
+The backend server will typically run on [http://localhost:5000](http://localhost:5000) (or as configured).
+
+#### 3. Install and run the frontend
+
+Open a new terminal window/tab:
+
+```bash
 cd frontend
 npm install
 npm run dev
 ```
 
----
+The frontend development server will typically run on [http://localhost:3000](http://localhost:3000).
 
-## 🛠️ Technologies Used
-- **Frontend:** React, Vite, Tailwind CSS
-- **Backend:** Node.js, Express, MongoDB
-- **Authentication:** JWT (JSON Web Tokens)
-- **Real-time:** Socket.IO (WebSockets)
+## 🌎 Live Demo
 
----
+<p align="center">
+  <a href="https://chess-master-two.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/PLAY%20NOW-♟%20Chess%20Master%20♟-%2300CFFF?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo - Chess Master"/>
+  </a>
+</p>
 
-## 📡 WebSocket Events
+## 📄 License
 
-Chess Master uses Socket.IO for real-time multiplayer features. Key events include:
-- `connection` / `disconnect`: Player joins/leaves
-- `waitingCount`: Updates number of players in queue
-- `gameAssigned`: Notifies players of a new game
-- `move`: Send/receive chess moves
-- `gameState`: Sync board state
-- `opponent`: Opponent info
-- `color`: Assigns white/black
-- `opponentReconnected`: Handles reconnections
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📚 Backend API Endpoints
+<p align="center"><i>Chess Master — Play, learn, and connect through chess!</i></p>
 
-All endpoints are prefixed with `/user` or `/profile` and expect/return JSON.
-
-### Authentication & User
-- `POST /user/register` — Register a new user.  
-  **Body:** `{ username, email, password }`
-- `POST /user/login` — Log in a user.  
-  **Body:** `{ email, password }`  
-  **Returns:** JWT token (in cookie) and user info.
-- `POST /user/logout` — Log out the current user (clears cookie).
-- `GET /user/:userId` — Get user info by user ID.
-
-### Match History
-- `POST /user/:userId/match-history` — Add a match to a user's history.  
-  **Body:** `{ opponent, status }`  
-  `status` is one of `"win"`, `"lose"`, `"draw"`.
-- `GET /user/:userId/match-history` — Get a user's match history.
-
-### Profile (Requires Auth)
-- `GET /profile/` — Get the current user's profile (from JWT).
-- `GET /profile/settings` — Get user profile settings (placeholder).
-
-### Other
-- `GET /stockfish` — Get the best move from Stockfish AI.  
-  **Query params:** Follows Stockfish API.
-- `GET /health` — Health check endpoint.
-
----
-
-## 👤 Author
-
-**Kolli Lokesh Reddy**
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
+<p align="center"><b>Made by Kolli Lokesh Reddy</b></p>
